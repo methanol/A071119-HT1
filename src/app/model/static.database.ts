@@ -387,7 +387,3 @@ export const places: IPlace[] = [
 export const logoA = {
 	src: 'assets/images/angular.png'
 }
-
-// export const places$: Observable<IPlace[]> = of(places).pipe(
-//   debounceTime(1000)
-//   );  ?QUESTION

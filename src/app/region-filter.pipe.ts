@@ -4,7 +4,6 @@ import {IPlace} from './model/static.database';
 @Pipe({
   name: 'regionFilter',
   pure: true
-  //pure: false ?QUESTION
 })
 
 export class RegionFilterPipe implements PipeTransform {

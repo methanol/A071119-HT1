@@ -80,9 +80,19 @@ h1 {
   color: #fff;
 }
 
+.ele-strip ul li a:active{
+  font-size:2em;
+  color: rgb(226, 230, 10);
+}
+
 .ele-strip ul li:last-child a{
-	font-size:2em;
+	font-size:1.5em;
 	color: #fff;
+  }
+
+.ele-strip ul li:last-child a:active{
+  font-size:2em;
+  color: rgb(226, 230, 10);
   }
 /*--teddy-bear--*/
 .teddy-bear {

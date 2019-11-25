@@ -14,7 +14,7 @@ export class WeatherComponent {
   constructor(private domSanitizer: DomSanitizer) { }
 
   trustStyle(style: string): SafeStyle {
-    return this.domSanitizer.bypassSecurityTrustStyle(style); // ?QUESTION
+    return this.domSanitizer.bypassSecurityTrustStyle(style);
   }
 
 }

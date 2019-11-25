@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import {IPlace, ISocial, IWeather, logoA} from './model/static.database';
 
 @Component({
@@ -8,12 +8,6 @@ import {IPlace, ISocial, IWeather, logoA} from './model/static.database';
 })
 export class AppComponent {
   title = 'A071119-HT1';
-
-  // @Output() 
-  // weather: IWeather; ?QUESTION
-
-  // @Output() 
-  // social: ISocial; ?QUESTION
 
   private weather: IWeather;
   private social: ISocial;
