@@ -26,30 +26,24 @@ export class AddressComponent implements OnInit {
   }
 
   public selectedType: string;
-  public types: string[] = [];
 
   constructor(private regionFilter: RegionFilterPipe) { }
 
   ngOnInit() {
       this.places = places;
-
-      this.places.map(place => place.type).forEach((it) => { 
-        (!this.types.includes(it)) ? this.types.push(it) : null;
-      })
-
       this.selectType();
   }
 
-  getFirstPlace(): IPlace {
+  private getFirstPlace(): IPlace {
     return this.regionFilter.transform(this.places, this.selectedType)[0];
   }
 
-  selectType(placeType?: string): void {
+  public selectType(placeType?: string): void {
     this.selectedType = placeType;
     this.selectedPlace = this.getFirstPlace();
   }
 
-  selectPlace(place: IPlace): void {
+  public selectCurrentPlace(place: IPlace): void {
     this.selectedPlace = place;
   }
 

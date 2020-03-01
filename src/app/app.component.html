@@ -1,11 +1,8 @@
 
 <div class="toolbar" role="banner">
-  <img height="35" alt="Angular Logo" [src]="logoSrc"
-  />
-  <span class="title">Welcome, igornepipenko!</span>
-    <div class="spacer"></div>
+  <img height="35" alt="Angular Logo" [src]="logoSrc"/>
+  <div class="spacer"></div>
   <a aria-label="Angular on twitter" href="https://twitter.com/angular" title="Twitter">
-    
     <svg id="twitter-logo" height="24" data-name="Logo — FIXED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <defs class="cls-1 cls-2"></defs>
       <rect class="cls-1" width="400" height="400" />
@@ -17,7 +14,7 @@
 
 <div class="element">
     <div class="element-left">
-        <app-address (SelectPlace) = "selectPlace($event)"></app-address>
+        <app-address (SelectPlace) = "selectCurrentPlace($event)"></app-address>
     </div>
   
     <div class="element-right">

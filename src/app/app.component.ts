@@ -13,7 +13,7 @@ export class AppComponent {
   private social: ISocial;
   private logoData = logoA;
 
-  selectPlace(currentPlace: IPlace): void {
+  selectCurrentPlace(currentPlace: IPlace): void {
     this.weather = currentPlace.weather;
     this.social = currentPlace.social_info;
   }
