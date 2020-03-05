@@ -47,4 +47,8 @@ export class AddressComponent implements OnInit {
     this.selectedPlace = place;
   }
 
+  public checkSelection(placeType: string | null = null): boolean {
+    return placeType === this.selectedType;
+  }
+
 }

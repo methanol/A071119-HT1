@@ -5,7 +5,7 @@
     <div class="ele-strip">
         <ul>
             <li *ngFor="let placeType of places | typeFilter">
-                <a href="#" (click)="selectType(placeType)">{{placeType}}</a>
+                <a href="#" (click)="selectType(placeType)" [class.active-type] = "checkSelection(placeType)">{{placeType}}</a>
             </li>
         </ul>
     </div>
