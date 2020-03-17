@@ -6,6 +6,7 @@ import {ISocial} from '../model/static.database';
   templateUrl: './social.component.html',
   styleUrls: ['./social.component.css']
 })
+
 export class SocialComponent {
   @Input()
   social: ISocial;

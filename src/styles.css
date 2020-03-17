@@ -247,7 +247,6 @@ i.text-info{
 }
 #style-2::-webkit-scrollbar-track
 {
-
   background-color:#f0f0f0;
 }
 
@@ -314,7 +313,7 @@ i.text-info{
 .clear{
   clear:both;
 }
-/*--meadia quries start here--*/
+/*--media queries start here--*/
 @media(max-width:1600px){
   .temperatur {
     margin-bottom:1.95em;

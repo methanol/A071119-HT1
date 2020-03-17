@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {IPlace, places} from '../model/static.database';
 import {RegionFilterPipe} from '../region-filter.pipe';
 
@@ -15,16 +15,6 @@ export class AddressComponent implements OnInit {
   private selectedPlacePrimary: IPlace;
 
   public places: IPlace[];
-
-  public set selectedPlace(place: IPlace) {
-    this.selectedPlacePrimary = place;
-    this.SelectPlace.emit(place);
-  }
-
-  public get selectedPlace(): IPlace {
-    return this.selectedPlacePrimary;
-  }
-
   public selectedType: string;
 
   constructor(private regionFilter: RegionFilterPipe) { }
@@ -49,6 +39,15 @@ export class AddressComponent implements OnInit {
 
   public checkSelection(placeType: string | null = null): boolean {
     return placeType === this.selectedType;
+  }
+
+  public set selectedPlace(place: IPlace) {
+    this.selectedPlacePrimary = place;
+    this.SelectPlace.emit(place);
+  }
+
+  public get selectedPlace(): IPlace {
+    return this.selectedPlacePrimary;
   }
 
 }
